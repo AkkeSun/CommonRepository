@@ -19,3 +19,6 @@ eureka:
 
 token:
   url: http://localhost:8082
+
+test:
+  value: hello
