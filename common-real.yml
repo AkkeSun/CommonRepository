@@ -4,3 +4,6 @@ eureka:
     register-with-eureka: true # 유레카 서버에 본인 서비스를 등록할 건지 여부
     service-url:
       default-zone: http://127.0.0.1:8761/eureka # 유레카 서버
+
+otuh2:
+  url: http://localhost:8081
