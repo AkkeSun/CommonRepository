@@ -7,3 +7,6 @@ eureka:
 
 oauth2:
   url: http://localhost:8081
+
+jwt:
+  key: oauth2_jwt_key
