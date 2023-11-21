@@ -5,5 +5,5 @@ eureka:
     service-url:
       default-zone: http://127.0.0.1:8761/eureka # 유레카 서버
 
-otuh2:
+oauth2:
   url: http://localhost:8081
