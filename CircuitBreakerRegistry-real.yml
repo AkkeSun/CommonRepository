@@ -1,0 +1,16 @@
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        # 10번 시도해서 실패율이 50%가 넘으면 서킷브레이커 오픈하여 10초간 유지
+        # 서킷브레이커 카운트를 체크하기 전에 오류가 발생한다면 설정값과 상관없이 fallback 이 실행된다 (ex API 서버 다운)
+        slidingWindowSize: 10 # 체크 횟수
+        failureRateThreshold: 50 #실패 확률
+        waitDurationInOpenState: 10s # 유지시간
+    instances:
+      account: # 서킷브레이커 이름
+        baseConfig: default # 적용할 설정
+      product:
+        baseConfig: default
+      order:
+        baseConfig: default
