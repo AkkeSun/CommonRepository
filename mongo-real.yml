@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://od:test@152.67.221.250:27017/msa_monitoring
